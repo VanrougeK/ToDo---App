@@ -1,20 +1,33 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+import PantallaLista from "./views/PantallaLista";
+import PantallaFormulario from "./views/PantallaFormulario";
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Stack.Navigator
+        initialRouteName="Lista"
+        screenOptions={{
+          headerStyle: { backgroundColor: "#ffd6e7" },
+          headerTintColor: "#ff85a1",
+          headerTitleStyle: { fontWeight: "bold", fontStyle: "italic" },
+          headerShadowVisible: false,
+        }}
+      >
+        <Stack.Screen
+          name="Lista"
+          component={PantallaLista}
+          options={{ title: "☆┇ Mis Tareas" }}
+        />
+        <Stack.Screen
+          name="Formulario"
+          component={PantallaFormulario}
+          options={{ title: "✐ᝰ Nueva Tarea" }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

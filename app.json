@@ -3,6 +3,7 @@
     "name": "todo-app",
     "slug": "todo-app",
     "version": "1.0.0",
+    "description": "App de lista de tareas desarrollada por el equipo del grupo DS41M",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -15,15 +16,31 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.vanrougek.todoapp",
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "backgroundColor": "#ffd6e7",
+        "foregroundImage": "./assets/icon.png"
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/icon.png"
+    },
+    "extra": {
+      "equipo": {
+        "materia": "Desarrollo de Aplicaciones Móviles",
+        "docente": "Dafnis Cain Villagran Vizcarra",
+        "grupo": "DS41M",
+        "integrantes": [
+          "Vania Núñez Ochoa",
+          "Danna Riccombeni Gaytan",
+          "Yorhel Hiram Esparza Heredia",
+          "Fernanda Helena Chavez Bedoya",
+          "Diego Parra Rey"
+        ]
+      },
+      "eas": {
+        "projectId": "7a405a80-86f5-41de-9abc-ce14fa2154a9"
+      }
     }
   }
 }
