@@ -8,7 +8,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "predeploy": "npx expo export",
+    "predeploy": "npx expo export && echo. > dist/.nojekyll && echo tunna.space > dist/CNAME",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
