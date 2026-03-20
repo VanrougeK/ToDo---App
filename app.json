@@ -24,7 +24,7 @@
     },
     "web": {
       "favicon": "./assets/icon.png",
-      "baseUrl": "/ToDo---App"
+      "baseUrl": "/"
     },
     "extra": {
       "equipo": {
