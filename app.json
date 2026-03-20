@@ -23,7 +23,8 @@
       }
     },
     "web": {
-      "favicon": "./assets/icon.png"
+      "favicon": "./assets/icon.png",
+      "baseUrl": "/ToDo---App"
     },
     "extra": {
       "equipo": {
