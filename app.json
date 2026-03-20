@@ -7,6 +7,9 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "experiments": {
+      "baseUrl": ""
+    },
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
@@ -23,8 +26,7 @@
       }
     },
     "web": {
-      "favicon": "./assets/icon.png",
-      "baseUrl": ""
+      "favicon": "./assets/icon.png"
     },
     "extra": {
       "equipo": {
