@@ -24,7 +24,7 @@
     },
     "web": {
       "favicon": "./assets/icon.png",
-      "baseUrl": "/"
+      "baseUrl": ""
     },
     "extra": {
       "equipo": {
